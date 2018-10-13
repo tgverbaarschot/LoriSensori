@@ -98,4 +98,13 @@ public class Bedrijf
 	public String toString() {
 	      return bedrijfsnaam + "(" + adres + ")";
 	}
+
+	public boolean loginverificatie(String username, String password) {
+		// TODO Auto-generated method stub
+		if (username == "Tester" && password == "!Test00") {
+				return true;
+		}
+		return false;
+		
+	}
 }
