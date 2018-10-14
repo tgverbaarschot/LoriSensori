@@ -48,7 +48,7 @@ public class Email extends Bericht{
 	     * Sender's credentials
 	     * */
 	   String fromUser = "lorisensori@gmail.com";
-	   String fromUserEmailPassword = "groep2test";
+	   String fromUserEmailPassword = "********";
 	   String emailHost = "smtp.gmail.com";
 	   Transport transport = mailSession.getTransport("smtp");
 	   transport.connect(emailHost, fromUser, fromUserEmailPassword);
