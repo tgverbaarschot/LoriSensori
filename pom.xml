@@ -5,6 +5,11 @@
   <version>0.0.1-SNAPSHOT</version>
   <name>LoriSensoriProject</name>
   <description>Schoolproject lora sensordata verzenden</description>
+  <dependencies><dependency>
+    <groupId>javax.mail</groupId>
+    <artifactId>mail</artifactId>
+    <version>1.5.0-b01</version>
+</dependency></dependencies>
   <build>
     <sourceDirectory>src</sourceDirectory>
     <plugins>

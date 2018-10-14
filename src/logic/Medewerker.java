@@ -3,7 +3,7 @@ package logic;
 public class Medewerker 
 {
 	private String voornaam, achternaam, gebruikersnaam, wachtwoord, email, telefoonnummer;
-	// satus apart?
+	// status apart?
 	// recht niet in enum?
 	
 	public Medewerker(String voornaam, String achternaam, String gebruikersnaam, String wachtwoord, String email, String telefoonnummer)
