@@ -5,5 +5,5 @@ import javax.mail.internet.AddressException;
 
 public interface INotificatieHandler 
 {
-	void stuurBericht(String[] emailTankBeheerders, EBerichtType berichtType) throws AddressException, MessagingException;
+	void stuurBericht(String[] dataTankBeheerders, EBerichtType berichtType);
 }

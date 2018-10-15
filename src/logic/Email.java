@@ -15,9 +15,9 @@ public class Email extends Bericht{
 	
 	Session mailSession;
 	 
-	public static void main(String args[]) throws AddressException, MessagingException
+	public static void main(String args[])
 	{
-		String[] emailAdressen = {"falcoverhagen@gmail.com", "falcoverhagen88@gmail.com"};
+		String[] emailAdressen = {""};//enter the email addresses you want to send the notification to here
 	    EBerichtType berichtType = EBerichtType.ONGEWENSTE_NIVEAU_DALING;
 	    Email javaEmail = new Email();
 	    javaEmail.stuurBericht(emailAdressen, berichtType);    
@@ -39,8 +39,8 @@ public class Email extends Bericht{
 			/**
 			 * Sender's credentials
 			 * */
-			String fromUser = "lorisensori@gmail.com";
-			String fromUserEmailPassword = "groep2test";
+			String fromUser = "lorisensori@gmail.com";//you can change this to any gmail account
+			String fromUserEmailPassword = "*******";//Falco has the password for this gmail account
 			String emailHost = "smtp.gmail.com";
 			Transport transport = mailSession.getTransport("smtp");
 			transport.connect(emailHost, fromUser, fromUserEmailPassword);
