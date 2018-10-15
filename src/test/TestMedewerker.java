@@ -1,3 +1,5 @@
+package test;
+
 import logic.Medewerker;
 import logic.Tank;
 import org.junit.Assert;
@@ -6,7 +8,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertFalse;
 
-class MedewerkerTest {
+class TestMedewerker {
 
     private Medewerker testMedewerker;
     private Tank testTank;

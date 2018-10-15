@@ -16,6 +16,8 @@ public class Medewerker
 		this.telefoonnummer = telefoonnummer;
 	}
 
+	public Medewerker(){}
+
 	public String getVoornaam() {
 		return voornaam;
 	}
@@ -63,6 +65,21 @@ public class Medewerker
 	public void setTelefoonnummer(String telefoonnummer) {
 		this.telefoonnummer = telefoonnummer;
 	}
-	
-	
+
+
+	public boolean toevoegenTank(Tank testTank) {
+	    return true;
+	}
+
+    public boolean updatenTank(Tank testTank) {
+	    return true;
+    }
+
+    public boolean afmeldenTank(Tank testTank) {
+	    return true;
+    }
+
+    public Tank zoekTank(String testTank) {
+	    return new Tank();
+    }
 }

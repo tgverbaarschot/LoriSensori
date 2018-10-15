@@ -7,4 +7,17 @@ public class TechnischBeheerder extends FunctioneelBeheerder
 		super(voornaam, achternaam, gebruikersnaam, wachtwoord, email, telefoonnummer);
 	}
 
+	public TechnischBeheerder(){}
+
+    public boolean aanmakenBedrijf(Bedrijf testBedrijf) {
+		return true;
+    }
+
+	public boolean afmeldenBedrijf(Bedrijf testBedrijf) {
+		return true;
+	}
+
+	public Bedrijf zoekBedrijf(String testBedrijf) {
+		return new Bedrijf();
+	}
 }

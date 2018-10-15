@@ -1,10 +1,12 @@
+package test;
+
 import logic.Bedrijf;
 import logic.TechnischBeheerder;
 import org.junit.Assert;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-class TechnischBeheerderTest {
+class TestTechnischBeheerder {
 
     TechnischBeheerder testTechnischBeheerder;
     Bedrijf testBedrijf;
