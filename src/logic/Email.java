@@ -52,7 +52,7 @@ public class Email extends Bericht{
 		   String emailSubject = "Test email LoriSensori";
 		        
 		   //TODO Welke email templates en waar maken???
-		   String emailBody = "This email is sent by LoriSensori because a " + berichtType.toString() + " has occured!!" + " HALLOOOOOO";
+		   String emailBody = "This email is sent by LoriSensori because a " + berichtType.toString() + " has occured!!";
 		   MimeMessage emailMessage = new MimeMessage(mailSession);
 		   /**
 		   * Set the mail recipients 
