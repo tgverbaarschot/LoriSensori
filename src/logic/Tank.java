@@ -43,7 +43,7 @@ public class Tank
 	}
 	
 	public Tank() {}
-
+	
 	public static void main(String[] args) throws ParseException {
 	    // user input: openingstijd --> nog exceptions erbij, moet nu met HH:mm:ss
 		Scanner in = new Scanner(System.in);

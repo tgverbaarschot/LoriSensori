@@ -15,11 +15,8 @@ public class Medewerker
 		this.email = email;
 		this.telefoonnummer = telefoonnummer;
 	}
-	
-	public Medewerker() 
-	{
-		
-	}
+
+	public Medewerker(){}
 
 	public String getVoornaam() {
 		return voornaam;

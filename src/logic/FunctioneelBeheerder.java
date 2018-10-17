@@ -42,6 +42,5 @@ public class FunctioneelBeheerder extends Medewerker {
 		// TODO Auto-generated method stub
 		return null;
 	}
-	
-	
+
 }

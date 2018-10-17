@@ -1,5 +1,6 @@
 package logic;
 
+
 import java.util.Properties;
 import javax.mail.Message;
 import javax.mail.MessagingException;
@@ -14,17 +15,18 @@ public class Email extends Bericht{
 	
 	Session mailSession;
 	 
-	public static void main(String args[]) throws AddressException, MessagingException
+	public static void main(String args[])
 	{
 		String[] emailAdressen = {""};//enter the email addresses you want to send the notification to here
 	    EBerichtType berichtType = EBerichtType.ONGEWENSTE_NIVEAU_DALING;
 	    Email javaEmail = new Email();
 	    javaEmail.stuurBericht(emailAdressen, berichtType);    
 	}
-	 
-	public void stuurBericht(String[] emailTankBeheerders, EBerichtType berichtType) 
+
+
+
+	public void stuurBericht(String[] emailTankBeheerders, EBerichtType berichtType)
 	{
-		
 		Properties emailProperties = System.getProperties();
 		emailProperties.put("mail.smtp.host", "smtp.gmail.com");
 		emailProperties.put("mail.smtp.socketFactory.port", "465");
@@ -76,7 +78,7 @@ public class Email extends Bericht{
 		   transport.close();
 		   System.out.println("Email sent successfully."); 
 		}
-		catch (MessagingException e) 
+		catch (MessagingException e)
 		{
 			e.printStackTrace();
 		}

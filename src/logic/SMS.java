@@ -31,6 +31,5 @@ public class SMS extends Bericht
 			
 			System.out.println(message.getSid());
 		}
-		
 	}
 }

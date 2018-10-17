@@ -19,4 +19,7 @@ public class TechnischBeheerder extends FunctioneelBeheerder
 		return false;
 	}
 
+	public Bedrijf zoekBedrijf(String testBedrijf) {
+		return new Bedrijf();
+	}
 }

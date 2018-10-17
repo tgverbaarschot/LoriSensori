@@ -1,3 +1,5 @@
+package test;
+
 import logic.Medewerker;
 import logic.Tank;
 import org.junit.Assert;
