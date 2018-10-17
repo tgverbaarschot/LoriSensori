@@ -1,5 +1,3 @@
-package test;
-
 import logic.Bedrijf;
 import logic.TechnischBeheerder;
 import org.junit.Assert;

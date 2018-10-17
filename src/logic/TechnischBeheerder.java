@@ -21,9 +21,4 @@ public class TechnischBeheerder extends FunctioneelBeheerder
 		return false;
 	}
 
-	public Bedrijf zoekBedrijf(String string) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
 }
