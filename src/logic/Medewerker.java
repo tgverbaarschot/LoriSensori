@@ -15,6 +15,11 @@ public class Medewerker
 		this.email = email;
 		this.telefoonnummer = telefoonnummer;
 	}
+	
+	public Medewerker() 
+	{
+		
+	}
 
 	public String getVoornaam() {
 		return voornaam;
@@ -62,6 +67,28 @@ public class Medewerker
 
 	public void setTelefoonnummer(String telefoonnummer) {
 		this.telefoonnummer = telefoonnummer;
+	}
+
+	public boolean toevoegenTank(Tank testTank) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	public boolean updatenTank(Tank testTank) {
+		// TODO Auto-generated method stub
+		return false;
+		
+	}
+
+	public boolean afmeldenTank(Tank testTank) {
+		// TODO Auto-generated method stub
+		return false;
+		
+	}
+
+	public Tank zoekTank(String string) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 	
 	

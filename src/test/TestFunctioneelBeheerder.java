@@ -1,3 +1,5 @@
+package test;
+
 import org.junit.Assert;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -5,12 +7,12 @@ import org.junit.jupiter.api.Test;
 import logic.Bedrijf;
 import logic.FunctioneelBeheerder;
 import logic.Medewerker;
+import logic.RechtEnums;
 
 import static org.junit.jupiter.api.Assertions.assertFalse;
 
-class FunctioneelBeheerderTest {
-
-
+class TestFunctioneelBeheerder {
+	
     FunctioneelBeheerder testFunctioneelBeheerder;
     Bedrijf testBedrijf;
     Medewerker testMedewerker;

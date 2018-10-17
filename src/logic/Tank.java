@@ -41,6 +41,8 @@ public class Tank
 		this.slotStatus = slotStatus;
 		this.meldingTanken = meldingTanken;		
 	}
+	
+	public Tank() {}
 
 	public static void main(String[] args) throws ParseException {
 	    // user input: openingstijd --> nog exceptions erbij, moet nu met HH:mm:ss
