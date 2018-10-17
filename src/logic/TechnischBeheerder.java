@@ -1,7 +1,5 @@
 package logic;
 
-import java.net.PortUnreachableException;
-
 public class TechnischBeheerder extends FunctioneelBeheerder
 {
 	public TechnischBeheerder(String voornaam, String achternaam, String gebruikersnaam, String wachtwoord, String email, String telefoonnummer) 
