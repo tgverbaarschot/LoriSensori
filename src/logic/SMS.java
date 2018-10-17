@@ -9,7 +9,7 @@ public class SMS extends Bericht
 	
 	public static final String ACCOUNT_SID = "";
 	public static final String AUTH_TOKEN = "";
-	public static final String PHONE_NUMBER = "+";
+	public static final String PHONE_NUMBER = "";
 	
 	public static void main(String[]args) 
 	{
