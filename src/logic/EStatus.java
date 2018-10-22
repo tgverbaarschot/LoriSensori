@@ -9,7 +9,7 @@ public enum EStatus implements Serializable
 	ACTIEF ("Actief"),	
 	NONACTIEF ("Non actief"), 
 	INGEBRUIK ("In gebruik"), 
-	INREPARATIE ("Ïn reparatie");
+	INREPARATIE ("In reparatie");
 	
 	static final EStatus DEFAULT = ACTIEF;
 	

@@ -9,8 +9,7 @@ public enum ELand implements Serializable
 {
 	NEDERLAND ("Nederland"),	
 	BELGIE ("België"), 
-	LUXEMBURG ("Luxemburg"), 
-	INREPARATIE ("Ïn reparatie");
+	LUXEMBURG ("Luxemburg");
 	
 	static final ELand DEFAULT = NEDERLAND;
 	
