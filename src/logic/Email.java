@@ -1,6 +1,5 @@
 package logic;
 
-
 import java.util.Properties;
 import javax.mail.Message;
 import javax.mail.MessagingException;
@@ -22,8 +21,6 @@ public class Email extends Bericht{
 	    Email javaEmail = new Email();
 	    javaEmail.stuurBericht(emailAdressen, berichtType);    
 	}
-
-
 
 	public void stuurBericht(String[] emailTankBeheerders, EBerichtType berichtType)
 	{
@@ -83,4 +80,5 @@ public class Email extends Bericht{
 			e.printStackTrace();
 		}
 	}
+
 }

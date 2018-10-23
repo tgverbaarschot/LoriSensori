@@ -11,6 +11,7 @@ public class Adres
 	
 //Constructors
 	public Adres(int AdresID, String straatnaam, int huisnummer, String huisnummertoevoeging, String postcode, String plaatsnaam, ELand LAND, int adresID)
+
 	{
 		this.adresID =adresID;
 		this.straatnaam = straatnaam;

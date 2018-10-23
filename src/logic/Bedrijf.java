@@ -4,12 +4,13 @@ package logic;
 
 public class Bedrijf 
 {
-	private String bedrijfsnaam, telefoonnummer, contactpersoon, rekeningnummer, btwNummer, vatNummer, kvkNummer;
+	private String bedrijfsnaam, telefoonnummer, rekeningnummer, btwNummer, vatNummer, kvkNummer;
 	private Adres adres;
+	private Medewerker contactpersoon;
 	// bedrijfstatus
-	
-//Constructors
-	public Bedrijf(String bedrijfsnaam, Adres adres, String telefoonnummer, String contactpersoon, String rekeningnummer, String btwNummer, String vatNummer, String kvkNummer)
+  
+	public Bedrijf(String bedrijfsnaam, Adres adres, String telefoonnummer, Medewerker contactpersoon, String rekeningnummer, String btwNummer, String vatNummer, String kvkNummer)
+
 	{
 		this.bedrijfsnaam = bedrijfsnaam;
 		this.adres = adres; 
@@ -58,11 +59,11 @@ public class Bedrijf
 		this.telefoonnummer = telefoonnummer;
 	}
 
-	public String getContactpersoon() {
+	public Medewerker getContactpersoon() {
 		return contactpersoon;
 	}
 
-	public void setContactpersoon(String contactpersoon) {
+	public void setContactpersoon(Medewerker contactpersoon) {
 		this.contactpersoon = contactpersoon;
 	}
 
@@ -100,5 +101,15 @@ public class Bedrijf
 
 	public String toString() {
 	      return bedrijfsnaam + "(" + adres + ")";
+	}
+
+
+	public boolean loginverificatie(String username, String password) {
+		// TODO Auto-generated method stub
+		if (username == "Tester" && password == "!Test00") {
+				return true;
+		}
+		return false;
+		
 	}
 }

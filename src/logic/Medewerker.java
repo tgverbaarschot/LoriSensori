@@ -1,15 +1,21 @@
 package logic;
 
+import java.util.Date;
+
 public class Medewerker 
 {
 	private String voornaam, achternaam, gebruikersnaam, wachtwoord, email, telefoonnummer;
+  
+	private Date geboortedatum;
+  
 	// status apart?
 	// recht niet in enum?
 	
-	public Medewerker(String voornaam, String achternaam, String gebruikersnaam, String wachtwoord, String email, String telefoonnummer)
+	public Medewerker(String voornaam, String achternaam, Date geboortedatum, String gebruikersnaam, String wachtwoord, String email, String telefoonnummer)
 	{
 		this.voornaam = voornaam;
 		this.achternaam = achternaam;
+		this.geboortedatum = geboortedatum;
 		this.gebruikersnaam = gebruikersnaam;
 		this.wachtwoord = wachtwoord;
 		this.email = email;
@@ -88,5 +94,12 @@ public class Medewerker
 		return null;
 	}
 	
+	public Date getGeboortedatum() {
+		return geboortedatum;
+	}
+	
+	public void setGeboortedatum(Date geboortedatum) {
+		this.geboortedatum = geboortedatum;
+	}
 	
 }
