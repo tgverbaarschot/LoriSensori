@@ -182,14 +182,14 @@ public class Database {
 		
 	public void updateAdres(Adres adres) throws SQLException {
 		Connection conn = connect();
-		String query = "UPDATE Adres SET straatnaam = ?, huisnummer = ?, huisnummertoevoeging = ?, postcode = ?, plaatsnaam = ? WHERE adrescode = ?";
+		String query = "UPDATE Adres SET straatnaam = ?, huisnummer = ?, huisnummertoevoeging = ?, postcode = ?, plaatsnaam = ?, land = ? WHERE adrescode = ?";
 		PreparedStatement ps = conn.prepareStatement(query);
 		ps.setString(1, adres.getStraatnaam());
 		ps.setInt(2, adres.getHuisnummer());
 		ps.setString(3, adres.getHuisnummertoevoeging());
 		ps.setString(4, adres.getPostcode());
 		ps.setString(5, adres.getPlaatsnaam());
-		ps.setString(6, adres.getPlaatsnaam());
+		ps.setString(6, String.valueOf(adres.getLAND()));
 		ps.setInt(7, adres.getAdresID());
 		ps.executeQuery();
 		conn.close();

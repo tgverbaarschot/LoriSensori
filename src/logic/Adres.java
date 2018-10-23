@@ -10,7 +10,7 @@ public class Adres
 	Bedrijf bedrijf;
 	
 //Constructors
-	public Adres(int AdresID, String straatnaam, int huisnummer, String huisnummertoevoeging, String postcode, String plaatsnaam, ELand LAND, int adresID)
+	public Adres(String straatnaam, int huisnummer, String huisnummertoevoeging, String postcode, String plaatsnaam, ELand LAND, int adresID)
 
 	{
 		this.adresID =adresID;
@@ -23,7 +23,7 @@ public class Adres
 	}
 	public Adres() {}
 
-	Adres eenAdres = new Adres(adresID, huisnummertoevoeging, adresID, huisnummertoevoeging, huisnummertoevoeging, huisnummertoevoeging, LAND, adresID);
+	Adres eenAdres = new Adres(straatnaam, huisnummer, huisnummertoevoeging, postcode, plaatsnaam, LAND, adresID);
 	
 // getters en setters
 	public int getAdresID() {

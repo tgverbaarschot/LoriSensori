@@ -1,8 +1,6 @@
 package logic;
 
-public interface iNotificatiehandler {
-	
-	boolean stuurBericht(Tank tank, EBericht bericht);
-	boolean medewerkerGeupdate(Medewerker medewerker);
-
+public interface INotificatieHandler 
+{
+	void stuurBericht(String[] dataTankBeheerders, EBerichtType berichtType);
 }
