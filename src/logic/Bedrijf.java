@@ -8,8 +8,9 @@ public class Bedrijf
 	private Adres adres;
 	private Medewerker contactpersoon;
 	// bedrijfstatus
-	
+  
 	public Bedrijf(String bedrijfsnaam, Adres adres, String telefoonnummer, Medewerker contactpersoon, String rekeningnummer, String btwNummer, String vatNummer, String kvkNummer)
+
 	{
 		this.bedrijfsnaam = bedrijfsnaam;
 		this.adres = adres; 
@@ -20,6 +21,8 @@ public class Bedrijf
 		this.vatNummer = vatNummer;
 		this.kvkNummer = kvkNummer;
 	}
+	
+	public Bedrijf() {}
 
 	public void setAdres(String straatnaam, int huisnummer, String huisnummertoevoeging, String postcode, String plaatsnaam, ELand lAND) {
 //		this.adres = adres;

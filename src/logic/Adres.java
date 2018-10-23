@@ -9,7 +9,9 @@ public class Adres
 	private ELand LAND;
 	Bedrijf bedrijf;
 	
-	public Adres(String straatnaam, int huisnummer, String huisnummertoevoeging, String postcode, String plaatsnaam, ELand LAND, int adresID)
+//Constructors
+	public Adres(int AdresID, String straatnaam, int huisnummer, String huisnummertoevoeging, String postcode, String plaatsnaam, ELand LAND, int adresID)
+
 	{
 		this.adresID =adresID;
 		this.straatnaam = straatnaam;
@@ -19,6 +21,7 @@ public class Adres
 		this.plaatsnaam = plaatsnaam;
 		this.LAND = LAND;
 	}
+	public Adres() {}
 
 	Adres eenAdres = new Adres(adresID, huisnummertoevoeging, adresID, huisnummertoevoeging, huisnummertoevoeging, huisnummertoevoeging, LAND, adresID);
 	

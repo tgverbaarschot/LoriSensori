@@ -5,6 +5,22 @@
   <version>0.0.1-SNAPSHOT</version>
   <name>LoriSensoriProject</name>
   <description>Schoolproject lora sensordata verzenden</description>
+  <dependencies><dependency>
+    <groupId>javax.mail</groupId>
+    <artifactId>mail</artifactId>
+    <version>1.5.0-b01</version>
+	</dependency><dependency>
+  	<groupId>com.twilio.sdk</groupId>
+ 	 <artifactId>twilio</artifactId>
+  	<version>7.27.0</version>
+	</dependency>
+      <dependency>
+          <groupId>org.junit.jupiter</groupId>
+          <artifactId>junit-jupiter-api</artifactId>
+          <version>RELEASE</version>
+          <scope>compile</scope>
+      </dependency>
+  </dependencies>
   <build>
     <sourceDirectory>src</sourceDirectory>
     <plugins>
@@ -12,6 +28,8 @@
         <artifactId>maven-compiler-plugin</artifactId>
         <version>3.7.0</version>
         <configuration>
+          <source>10</source>
+            <target>10</target>
           <release>10</release>
         </configuration>
       </plugin>

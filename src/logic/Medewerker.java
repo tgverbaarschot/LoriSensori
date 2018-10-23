@@ -5,8 +5,10 @@ import java.util.Date;
 public class Medewerker 
 {
 	private String voornaam, achternaam, gebruikersnaam, wachtwoord, email, telefoonnummer;
+  
 	private Date geboortedatum;
-	// satus apart?
+  
+	// status apart?
 	// recht niet in enum?
 	
 	public Medewerker(String voornaam, String achternaam, Date geboortedatum, String gebruikersnaam, String wachtwoord, String email, String telefoonnummer)
@@ -19,6 +21,8 @@ public class Medewerker
 		this.email = email;
 		this.telefoonnummer = telefoonnummer;
 	}
+
+	public Medewerker(){}
 
 	public String getVoornaam() {
 		return voornaam;
@@ -66,6 +70,28 @@ public class Medewerker
 
 	public void setTelefoonnummer(String telefoonnummer) {
 		this.telefoonnummer = telefoonnummer;
+	}
+
+	public boolean toevoegenTank(Tank testTank) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	public boolean updatenTank(Tank testTank) {
+		// TODO Auto-generated method stub
+		return false;
+		
+	}
+
+	public boolean afmeldenTank(Tank testTank) {
+		// TODO Auto-generated method stub
+		return false;
+		
+	}
+
+	public Tank zoekTank(String string) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 	
 	public Date getGeboortedatum() {

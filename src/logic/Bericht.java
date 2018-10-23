@@ -1,17 +1,9 @@
 package logic;
 
-public class Bericht implements iNotificatiehandler {
-
-	@Override
-	public boolean stuurBericht(Tank tank, EBericht bericht) {
-		// TODO Auto-generated method stub
-		return false;
+public abstract class Bericht implements INotificatieHandler
+{
+	public void stuurBericht(String[] dataTankBeheerders, EBerichtType berichtType)
+	{
+		// TODO Auto-generated method stub		
 	}
-
-	@Override
-	public boolean medewerkerGeupdate(Medewerker medewerker) {
-		// TODO Auto-generated method stub
-		return false;
-	}
-
 }

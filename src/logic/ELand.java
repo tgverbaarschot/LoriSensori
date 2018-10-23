@@ -8,8 +8,9 @@ import java.io.Serializable;
 public enum ELand implements Serializable 
 {
 	NEDERLAND ("Nederland"),	
-	BELGIE ("België"), 
-	LUXEMBURG ("Luxemburg");
+	BELGIE ("Belgie"),
+	LUXEMBURG ("Luxemburg"), 
+	INREPARATIE ("In reparatie");
 	
 	static final ELand DEFAULT = NEDERLAND;
 	
